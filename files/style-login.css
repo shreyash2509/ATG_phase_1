@@ -93,7 +93,7 @@
 
 .banner-img {
   position: absolute;
-  width: 1440px;
+  width: 100%;
   height: 440px;
   left: 0px;
   top: 72px;
@@ -415,9 +415,123 @@
   width: 50px;
 }
 
-@media only screen and (max-width: 880px) {
-  .navbar {
+@media only screen and (max-width: 940px) {
+  .modal-dialog {
+    width: 93vw;
+  }
+
+  .alert {
     display: none;
+  }
+
+  .mobile-header {
+    display: block;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+  }
+
+  .create-account-modal {
+    display: none;
+  }
+
+  .modal-body {
+    padding-top: 0px;
+    padding-right: 0px;
+  }
+
+  .modal-content-form {
+    padding-right: 10px;
+  }
+
+  .modal-content-form-left {
+    padding-left: 15px;
+  }
+
+  .modal-content-form-right {
+    display: none;
+  }
+
+  .signup-mobile {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .signup-mobile a {
+    cursor: pointer;
+    color: blue;
+    padding-top: 5px;
+  }
+
+  .signup-buttons {
+    display: none;
+  }
+
+  .signup-buttons-mobile {
+    display: block;
+    padding-top: 25px;
+  }
+
+  .signup-buttons-mobile button {
+    width: 320px;
+    height: 38px;
+    border-radius: 20px;
+  }
+
+  .create-account-button {
+    width: 150px !important;
+    height: 36px !important;
+    background: #2f6ce5;
+    color: #ffffff;
+  }
+
+  .create-account-button a {
+    text-decoration: none;
+    color: #ffffff;
+  }
+
+  .signup-buttons-2 {
+    padding-top: 25px;
+  }
+
+  .google-button {
+    padding-top: 10px;
+  }
+
+  .google-button img {
+    width: 16px;
+  }
+
+  .facebook-button img {
+    width: 16px;
+  }
+
+  .facebook-button button {
+    background: #ffffff;
+  }
+
+  .google-button button {
+    background: #ffffff;
+  }
+
+  .agreement {
+    padding-top: 30px;
+    text-align: center;
+    font-size: 11px;
+    line-height: 16px;
+  }
+
+  .forgot-password {
+    padding-top: 25px;
+    padding-bottom: 35px;
+  }
+
+  #signin-mobile-button {
+    padding-top: 45px;
+  }
+
+  #signin-mobile-button-2 {
+    padding-top: 45px;
   }
 
   .show-mobile-top {
@@ -453,7 +567,7 @@
   }
 
   .banner-img img {
-    width: 100vw;
+    width: 100%;
     height: 236px;
     left: 0px;
   }
@@ -465,6 +579,7 @@
     left: 50px;
     top: 155px;
     font-size: 17px;
+    filter: brightness(120%);
   }
 
   .computer-2 {
@@ -475,12 +590,13 @@
     top: 180px;
     font-size: 12px;
     padding-top: 10px;
+    filter: brightness(120%);
   }
 
   .main-container {
     top: 280px;
     left: 30px;
-    width: 100vw;
+    width: 88vw;
   }
 
   .navigation-left {
@@ -489,6 +605,10 @@
 
   .navigation-right {
     display: none;
+  }
+
+  .row {
+    margin-right: 0px;
   }
 
   .navigation-mobile {
