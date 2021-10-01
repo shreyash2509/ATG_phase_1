@@ -416,7 +416,7 @@
         <hr class="first-hr" />
         <br />
         <div class="row" style="padding-right: 0px">
-          <div class="card col-8">
+          <div class="card col-8" id="card-id-1">
             <img
               src="./files/images/Rectangle 5article.png"
               class="card-img-top"
@@ -510,7 +510,7 @@
         </div>
 
         <div class="row">
-          <div class="card col-8">
+          <div class="card col-8" id="card-id-2">
             <img
               src="./files/images/Rectangle 5education.png"
               class="card-img-top"
@@ -590,7 +590,7 @@
         </div>
 
         <div class="row">
-          <div class="card col-8">
+          <div class="card col-8" id="card-id-3">
             <img
               src="./files/images/Rectangle 5meetup.png"
               class="card-img-top"
@@ -674,7 +674,7 @@
         </div>
 
         <div class="row">
-          <div class="card col-8">
+          <div class="card col-8" id="card-id-4">
             <div class="card-body">
               <img src="./files/images/💼️ Job.png" alt="" class="article" />
               <div class="card-heading">
@@ -759,5 +759,19 @@
         </button>
       </div>
     </section>
+
+    <script>
+      if (window.matchMedia("only screen and (max-width: 1000px)").matches) {
+        document.getElementById("card-id-1").className = "card col-12";
+        document.getElementById("card-id-2").className = "card col-12";
+        document.getElementById("card-id-3").className = "card col-12";
+        document.getElementById("card-id-4").className = "card col-12";
+      } else {
+        document.getElementById("card-id-1").className = "card col-8";
+        document.getElementById("card-id-2").className = "card col-8";
+        document.getElementById("card-id-3").className = "card col-8";
+        document.getElementById("card-id-4").className = "card col-8";
+      }
+    </script>
   </body>
 </html>
